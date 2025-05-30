@@ -15,7 +15,7 @@ Helps setting up mock environment for [wcm.io Site API Generic Edit Handler Exte
 
 |Site API Generic Edit Handler Extensions Mock Helper version |AEM version supported
 |---------------------------------------|----------------------
-|1.0.0 or higher                        |AEM 6.5.7+, AEMaaCS
+|1.1.0 or higher                        |AEM 6.5.17+, AEMaaCS
 
 
 ### GitHub Repository
