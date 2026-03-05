@@ -39,14 +39,14 @@ public class ContextPluginsTest {
 
   @Rule
   public AemContext context = new AemContextBuilder()
-      .plugin(CACONFIG)
-      .plugin(WCMIO_SLING, WCMIO_SITEAPI_GENERICEDIT_HANDLER).build();
+    .plugin(CACONFIG)
+    .plugin(WCMIO_SLING, WCMIO_SITEAPI_GENERICEDIT_HANDLER).build();
 
   @Test
   public void testServices() {
     assertEquals(2, Stream.of(context.getServices(ValueInspectorService.class, null))
-        .filter(service -> service instanceof LinkValueInspectorService || service instanceof MediaValueInspectorService)
-        .count());
+      .filter(service -> service instanceof LinkValueInspectorService || service instanceof MediaValueInspectorService)
+      .count());
   }
 
 }
